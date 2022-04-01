@@ -7,17 +7,15 @@
 
     /* Helper variables to avoid duplication in the colors. */
     --ck-custom-background: hsl(214, 43%, 8%);
-    --ck-custom-foreground: hsl(214, 43%, 8%);
-    --ck-custom-border: hsl(214, 43%, 8%);
+    --ck-custom-foreground: hsl(0, 0%, 97%);
+    --ck-custom-border: hsl(300, 1%, 22%);
     --ck-custom-white: hsl(0, 0%, 100%);
 
     /* -- Overrides generic colors. ------------------------------------------------------------- */
 
     --ck-color-base-foreground: var(--ck-custom-background);
     --ck-color-base-background: var(--ck-custom-background);
-    --ck-color-base-border: var(--ck-custom-border);
-    --ck-color-focus-border: var(--ck-custom-border);
-    --ck-color-focus-ring: var(--ck-custom-border);
+    --ck-color-focus-border: rgb(232, 236, 240);
     --ck-color-text: hsl(0, 0%, 98%);
     --ck-color-shadow-drop: hsla(0, 0%, 0%, 0.2);
     --ck-color-shadow-inner: hsla(0, 0%, 0%, 0.1);
@@ -106,4 +104,21 @@
     /* -- Overrides the default colors used by the ckeditor5-link package. ---------------------- */
 
     --ck-color-link-default: hsl(190, 100%, 75%);
+}
+body
+{/* Font */
+font-family: Arial, Verdana, sans-serif;
+font-size: 15px;/* Text color */
+color: #ffffff;/* Remove the background color to make it transparent */
+background-color: #fff;
+}
+:myCKEditor {
+    --ck-color-base-background: hsl(214, 43%, 8%);
+    --ck-border-radius: 4px;
+    --ck-font-size-base: 14px;
+}
+.ck-content .ck-editor__top .ck-reset_all .ck-reset .ck-editor .ck-rounded-corners .ck-editor__main{
+    --ck-color-base-background: hsl(214, 43%, 8%);
+    --ck-border-radius: 4px;
+    --ck-font-size-base: 14px;
 }

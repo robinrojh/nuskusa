@@ -6,8 +6,8 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import firebase from 'firebase';
 import styled from 'styled-components'
 import Select from 'react-select'
-import '../components/Post/custom.css'
 import Checkbox from '../../src/components/Post/Checkbox'
+import './content-styles.css'
 
 class Uploader {
     constructor(loader) {
@@ -427,6 +427,8 @@ class AddPost extends React.Component {
                 <Form><Title type='text' key="titleInput" value={this.state.state.title} onChange={this.handleTitleChange} onBlur={this.handleTitleBlur} onFocus={this.handleTitleFocus} /></Form>
                 <Editor>
                     <CKEditor
+                        class="ck-content"
+                        id={"myCKEditor"}
                         editor={ClassicEditor}
                         data={this.content}
                         config={custom_config}
@@ -442,7 +444,6 @@ class AddPost extends React.Component {
                                 );
                             })
                         }}
-                        id={"myCKEditor"}
                     />
                 </Editor>
                 <CheckBoxContainer>
