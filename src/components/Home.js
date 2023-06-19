@@ -1,38 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from 'react-reveal/Fade'
-import logo from '../photos/NUS logo gray.png'
 
 const HomeWeb = styled.div`
     background-color: #FFFFFF;
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-bottom: 50px;
 `
 
 const HomeTitle = styled.div`
-    justify-content: flex-start;
     display: inline-flex;
     background: #0F1F2F;
-    height: 360px;
+    width: 100%;
+    justify-content: flex-start;
 `
 
 const HomeTitle2 = styled.div`
-    border-left: 1420px solid #0F1F2F;
+    border-left: 100vw solid #0F1F2F;
     border-bottom: 200px solid transparent;
 `
 
 const Name = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 230px; 
+    margin-right: 3vw;
+    margin-left: 15vw;
     justify-content: flex-start;
-    width: 450px;
+    width: 705px;
 `
 
 const Name1 = styled.h1`
     color: #ACADAB;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 400;
     font-family: 'Optima','sans-serif';
     line-height: 60px;
@@ -47,17 +48,18 @@ const Name2 = styled.h1`
 `
 
 const Logo = styled.img`
-    height: 310px;
-    margin-left: 150px; 
-    margin-top: 40px;
+    height: 260px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
     mix-blend-mode: screen;
+    margin-left: 3vw;
     opacity: 0.7;
 `
 
 const TeamHeader = styled.h1`
     color: #050716;
     font-size: 45px;
-    font-family: 'Optima','sans-serif';
     margin-left: 187px;
     margin-top: 50px;
     text-align: left;
@@ -149,7 +151,7 @@ function Home(){
                     </ProfileFooter>
                 </MemberProfile>
             </Members>
-            <TeamTitle>IR</TeamTitle>
+            <TeamTitle>Vice President</TeamTitle>
             <Members>
                 <MemberProfile>
                     <ProfileHeader>
@@ -159,6 +161,9 @@ function Home(){
                         <MemberName>하아연</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
+            </Members>
+            <TeamTitle>IR</TeamTitle>
+            <Members>
                 <MemberProfile>
                     <ProfileHeader>
                         <MemberPic2 src={require('../photos/이채연.png')}></MemberPic2>
