@@ -4,15 +4,18 @@ import { Link } from "react-router-dom";
 
 const HeaderWeb = styled.div`
     height: 70px;
+    width: 100%;
     display: flex;
     background-color: #0F1F2F;
     flex-direction: row;
     position: sticky;
     top: 0; 
+    z-index:100;
 `
 
 const HeaderName = styled.div`
-    margin-left: 187px;
+    margin-left: 15vw;
+    margin-right: 40vw;
     margin-top: 15px;
     margin-bottom: 10px;
     font-family: "Gill Sans", sans-serif;
@@ -28,7 +31,7 @@ const HeaderName = styled.div`
 
 const HeaderNav = styled.div`
     display: inline-flex;
-    margin-left: 590px;
+    flex-direction: row;
     align-items: center;
 `
 

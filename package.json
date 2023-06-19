@@ -15,11 +15,13 @@
     "react-google-forms-hooks": "^1.2.4",
     "react-icons": "^4.8.0",
     "react-native-web": "^0.19.4",
+    "react-paypal-express-checkout": "^1.0.5",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-scroll-motion": "^0.3.2",
     "styled-components": "^5.3.10",
+    "typescript": "^5.1.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
