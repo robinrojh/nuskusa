@@ -5,8 +5,6 @@ function Modal({onClose, maskClosable, closable, visible, image, url }){
     const VISITED_BEFORE_DATE = localStorage.getItem('VisitCookie')
     const VISITED_NOW_DATE = Math.floor(new Date().getDate())
 
-    //localStorage.removeItem('VisitCookie')
-
     useEffect(() => {
         if (VISITED_BEFORE_DATE !== null) {
             if (VISITED_BEFORE_DATE === VISITED_NOW_DATE) {
