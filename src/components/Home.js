@@ -1,134 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from 'react'
 import styled from "styled-components";
 import Fade from 'react-reveal/Fade'
-
-const HomeWeb = styled.div`
-    background-color: #FFFFFF;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin-bottom: 50px;
-`
-
-const HomeTitle = styled.div`
-    display: inline-flex;
-    background: #0F1F2F;
-    width: 100%;
-    justify-content: flex-start;
-`
-
-const HomeTitle2 = styled.div`
-    border-left: 100vw solid #0F1F2F;
-    border-bottom: 200px solid transparent;
-`
-
-const Name = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-right: 3vw;
-    margin-left: 15vw;
-    justify-content: flex-start;
-    width: 705px;
-`
-
-const Name1 = styled.h1`
-    color: #ACADAB;
-    font-size: 50px;
-    font-weight: 400;
-    font-family: 'Optima','sans-serif';
-    line-height: 60px;
-    text-align: left;
-`
-
-const Name2 = styled.h1`
-    color: #ACADAB;
-    font-size: 20px;
-    text-align: left;
-    line-height: 10px;
-`
-
-const Logo = styled.img`
-    height: 260px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    justify-content: center;
-    mix-blend-mode: screen;
-    margin-left: 3vw;
-    opacity: 0.7;
-`
-
-const TeamHeader = styled.h1`
-    color: #050716;
-    font-size: 45px;
-    margin-left: 187px;
-    margin-top: 50px;
-    text-align: left;
-`
-const TeamTitle = styled.h2`
-    color: #050716;
-    font-size: 35px;
-    margin-top: 30px;
-    margin-left: 187px;
-    text-align: left;
-`
-
-const Members = styled.div`
-    margin-left: 187px; 
-    margin-right: 187px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-`
-
-const MemberProfile = styled.div`
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    margin-right: 40px;
-    margin-bottom: 30px;
-`
-
-const ProfileHeader = styled.div`
-    width: 300px;
-    height: 330px;
-    display: flex;
-    justify-content: center;
-`
-const ProfileFooter = styled.div`
-    background: #232A62;
-    width: 300px;
-    height: 70px;
-    border-radius: 0px 0px 25px 25px;
-    display: flex;
-    justify-content: flex-start;
-`
-
-const MemberPic = styled.img`
-    width: 80%;
-    display: block;
-    align-self: flex-end;
-`
-
-const MemberPic2 = styled.img`
-    align-self: flex-end;
-    width: 110%;
-    display: block;
-`
-
-const MemberName = styled.h3`
-    color: white;
-    font-size: 22px;
-    margin-left: 25px;
-    align-self: center;
-`
+import Modal from './Modal';
+import 단톡방 from '../photos/신입생 단톡방.png';
 
 function Home(){
+    const [modalVisible, setModalVisible] = useState(true)
+    const closeModal = () => {
+        setModalVisible(false)
+    }
+
     return(
         <HomeWeb>
+            {modalVisible && (
+                    <Modal visible={modalVisible} closable={true} maskClosable={true} onClose={closeModal} 
+                    image={단톡방} url={'https://forms.gle/sSDYkoNDpe4FDuFS8'}></Modal>
+            )}
             <HomeTitle>
                 <Fade duration={3000}>
                     <Name>
@@ -265,5 +152,129 @@ function Home(){
         </HomeWeb>
     );
 }
+
+const HomeWeb = styled.div`
+    background-color: #FFFFFF;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 50px;
+`
+
+const HomeTitle = styled.div`
+    display: inline-flex;
+    background: #0F1F2F;
+    width: 100%;
+    justify-content: flex-start;
+`
+
+const HomeTitle2 = styled.div`
+    border-left: 100vw solid #0F1F2F;
+    border-bottom: 200px solid transparent;
+`
+
+const Name = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+    margin-left: 15vw;
+    justify-content: flex-start;
+    width: 705px;
+`
+
+const Name1 = styled.h1`
+    color: #ACADAB;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Optima','sans-serif';
+    line-height: 60px;
+    text-align: left;
+`
+
+const Name2 = styled.h1`
+    color: #ACADAB;
+    font-size: 20px;
+    text-align: left;
+    line-height: 10px;
+`
+
+const Logo = styled.img`
+    height: 260px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+    mix-blend-mode: screen;
+    margin-left: 3vw;
+    opacity: 0.7;
+`
+
+const TeamHeader = styled.h1`
+    color: #050716;
+    font-size: 45px;
+    margin-left: 187px;
+    margin-top: 50px;
+    text-align: left;
+`
+const TeamTitle = styled.h2`
+    color: #050716;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-left: 187px;
+    text-align: left;
+`
+
+const Members = styled.div`
+    margin-left: 187px; 
+    margin-right: 187px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+`
+
+const MemberProfile = styled.div`
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-right: 40px;
+    margin-bottom: 30px;
+`
+
+const ProfileHeader = styled.div`
+    width: 300px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+`
+const ProfileFooter = styled.div`
+    background: #232A62;
+    width: 300px;
+    height: 70px;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    justify-content: flex-start;
+`
+
+const MemberPic = styled.img`
+    width: 80%;
+    display: block;
+    align-self: flex-end;
+`
+
+const MemberPic2 = styled.img`
+    align-self: flex-end;
+    width: 110%;
+    display: block;
+`
+
+const MemberName = styled.h3`
+    color: white;
+    font-size: 22px;
+    margin-left: 25px;
+    align-self: center;
+`
 
 export default Home;
