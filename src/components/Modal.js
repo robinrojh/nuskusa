@@ -82,6 +82,7 @@ const ModalInner = styled.div`
     transform: translateY(-50%);
     margin: 0 auto;
     padding: 40px 20px;
+
 `
 const ModalInner2 = styled.div`
     display: flex;

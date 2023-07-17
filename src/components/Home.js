@@ -162,10 +162,13 @@ const HomeWeb = styled.div`
 `
 
 const HomeTitle = styled.div`
-    display: inline-flex;
     background: #0F1F2F;
     width: 100%;
     justify-content: flex-start;
+    display: flex;
+    @media only screen and (max-width : 480px) {
+        flex-direction: column;
+    }
 `
 
 const HomeTitle2 = styled.div`
@@ -179,23 +182,40 @@ const Name = styled.div`
     margin-right: 3vw;
     margin-left: 15vw;
     justify-content: flex-start;
-    width: 705px;
+    @media only screen and (min-width : 1025px) {
+        width: 705px;
+    }
+    @media only screen and (max-width : 480px) {
+        width: 70%;
+    }
 `
 
 const Name1 = styled.h1`
     color: #ACADAB;
-    font-size: 50px;
-    font-weight: 400;
     font-family: 'Optima','sans-serif';
-    line-height: 60px;
     text-align: left;
+    @media only screen and (min-width : 1025px) {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 60px;
+    }
+    @media only screen and (max-width : 480px) {
+        font-size: 25px;
+        line-height: 30px;
+    }
 `
 
 const Name2 = styled.h1`
     color: #ACADAB;
-    font-size: 20px;
     text-align: left;
-    line-height: 10px;
+    @media only screen and (min-width : 1025px) {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    @media only screen and (max-width : 480px) {
+        font-size: 12px;
+        line-height: 15px;
+    }
 `
 
 const Logo = styled.img`
@@ -206,6 +226,9 @@ const Logo = styled.img`
     mix-blend-mode: screen;
     margin-left: 3vw;
     opacity: 0.7;
+    @media only screen and (max-width : 480px) {
+        height: 150px;
+    }
 `
 
 const TeamHeader = styled.h1`
@@ -214,6 +237,10 @@ const TeamHeader = styled.h1`
     margin-left: 187px;
     margin-top: 50px;
     text-align: left;
+    @media only screen and (max-width : 480px) {
+        font-size: 30px;
+        margin-left: 30px;
+    }
 `
 const TeamTitle = styled.h2`
     color: #050716;
@@ -221,6 +248,10 @@ const TeamTitle = styled.h2`
     margin-top: 30px;
     margin-left: 187px;
     text-align: left;
+    @media only screen and (max-width : 480px) {
+        font-size: 25px;
+        margin-left: 30px;
+    }
 `
 
 const Members = styled.div`
@@ -230,6 +261,10 @@ const Members = styled.div`
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    @media only screen and (max-width : 480px) {
+        margin-left: 30px; 
+        margin-right: 30px;
+    }
 `
 
 const MemberProfile = styled.div`
@@ -241,6 +276,12 @@ const MemberProfile = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.15);
     margin-right: 40px;
     margin-bottom: 30px;
+    @media only screen and (max-width : 480px) {
+        width: 100px;
+        height: 133px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
 `
 
 const ProfileHeader = styled.div`
@@ -248,6 +289,10 @@ const ProfileHeader = styled.div`
     height: 330px;
     display: flex;
     justify-content: center;
+    @media only screen and (max-width : 480px) {
+        width: 100px;
+        height: 109px;
+    }
 `
 const ProfileFooter = styled.div`
     background: #232A62;
@@ -256,6 +301,11 @@ const ProfileFooter = styled.div`
     border-radius: 0px 0px 25px 25px;
     display: flex;
     justify-content: flex-start;
+    @media only screen and (max-width : 480px) {
+        width: 100px;
+        height: 23px;
+        border-radius: 0px 0px 10px 10px;
+    }
 `
 
 const MemberPic = styled.img`
@@ -275,6 +325,10 @@ const MemberName = styled.h3`
     font-size: 22px;
     margin-left: 25px;
     align-self: center;
+    @media only screen and (max-width : 480px) {
+        font-size: 10px;
+        margin-left: 10px;
+    }
 `
 
 export default Home;

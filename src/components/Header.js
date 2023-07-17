@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const HeaderWeb = styled.div`
-    height: 70px;
     width: 100%;
     display: flex;
     background-color: #0F1F2F;
@@ -11,21 +10,32 @@ const HeaderWeb = styled.div`
     position: sticky;
     top: 0; 
     z-index:100;
+    @media only screen and (min-width : 1025px) {
+        height: 70px;
+    }
+    @media only screen and (max-width : 480px) {
+        height: 40px;
+    }
 `
 
 const HeaderName = styled.div`
     margin-left: 15vw;
-    margin-right: 40vw;
     margin-top: 15px;
     margin-bottom: 10px;
+    font-size: 35px;
+    margin-right: 40vw;
     font-family: "Gill Sans", sans-serif;
     letter-spacing: 2px;
-    font-size: 35px;
     font-weight: 520;
     color: #B79A50;
     &:hover{
         color: #F3ECDB;
         transition: 200ms ease-in;
+    }
+    @media only screen and (max-width : 480px) {
+        font-size: 20px;
+        margin-right: 10vw;
+        margin-top: 8px;
     }
 `
 
@@ -36,15 +46,22 @@ const HeaderNav = styled.div`
 `
 
 const HeaderOption = styled.div`
-    margin-left: 30px;
-    font-size: 20px;
-    font-family: 'seoulnamsan-cbl-regular', sans-serif;
-    font-weight: 550;
     color: #B79A50;
-    margin-bottom: 10px;
+    font-family: 'seoulnamsan-cbl-regular', sans-serif;
     &:hover{
         color: #F3ECDB;
         transition: 200ms ease-in;
+    }
+    @media only screen and (min-width : 1025px) {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 550;
+    }
+    @media only screen and (max-width : 480px) {
+        margin-left: 20px;
+        font-size: 10px;
+        font-weight: 520;
     }
 `
 

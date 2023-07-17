@@ -20,6 +20,10 @@ const FooterName = styled.h1`
     letter-spacing: -2px;
     color: #B79A50;
     text-align: left;
+    @media only screen and (max-width : 480px) {
+        margin-left: 30px;
+        font-size: 25px;
+    }
 `
 const FooterEmail = styled.h2`
     margin-left: 187px;
@@ -29,11 +33,18 @@ const FooterEmail = styled.h2`
     font-weight: 500;
     color: #B79A50;
     text-align: left;
+    @media only screen and (max-width : 480px) {
+        margin-left: 30px;
+        font-size: 15px;
+    }
 `
 const SocialContainer = styled.div`
     display: inline-flex;
     margin-left: 187px;
     justify-content: flex-start;
+    @media only screen and (max-width : 480px) {
+        margin-left: 30px;
+    }
 `
 
 const SocialFrame = styled.div`
@@ -47,6 +58,13 @@ const SocialFrame = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width : 480px) {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-right: 8px;
+
+    }
 `
 
 function Footer(){
@@ -64,7 +82,9 @@ function Footer(){
                     </Link>
                 </SocialFrame>
                 <SocialFrame>
-                    <GrYoutube name="GrYoutube" color="#B79A50" size="37px"></GrYoutube>
+                    <Link to="https://www.youtube.com/@nus__ks">
+                        <GrYoutube name="GrYoutube" color="#B79A50" size="37px"></GrYoutube>
+                    </Link>
                 </SocialFrame>
             </SocialContainer>
         </FooterWeb>
