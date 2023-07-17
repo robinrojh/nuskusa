@@ -8,12 +8,18 @@ const FreshmenWeb = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 187px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
+    @media only screen and (max-width : 480px) {
+      margin-left: 30px;
+    }
 ` 
 const FreshmenTitle = styled.h1`
     color: #050716;
     font-size: 50px;
     text-align: left;
+    @media only screen and (max-width : 480px) {
+      font-size: 20px;
+    }
 `
 
 const FreshmenDesc = styled.p`
@@ -21,6 +27,9 @@ const FreshmenDesc = styled.p`
     font-family: "Gill Sans", sans-serif;
     font-size: 15px;
     text-align: left;
+    @media only screen and (max-width : 480px) {
+      font-size: 10px;
+    }
 `
 
 const FreshmenLink = styled.div`
@@ -28,10 +37,16 @@ const FreshmenLink = styled.div`
     font-family: "Gill Sans", sans-serif;
     font-size: 15px;
     text-align: left;
+    @media only screen and (max-width : 480px) {
+      font-size: 10px;
+    }
 `
 const NotionWrapper = styled.div`
     width: 80%;
     background-color: #d5ddeb;
+    @media only screen and (max-width : 480px) {
+      width: 90%;
+    }
 `
 
 function Freshmen(){
