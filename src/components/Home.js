@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 import Fade from 'react-reveal/Fade'
 import Modal from './Modal';
-import 단톡방 from '../photos/신입생 단톡방.png';
+import Carousel from './Carousel';
 
 function Home(){
-    const [modalVisible, setModalVisible] = useState(true)
+    const [modalVisible, setModalVisible] = useState(true)  //팝업창 추가시 이미지와 url 변경 후 useState를 true로 바꿔주기
     const closeModal = () => {
         setModalVisible(false)
     }
@@ -14,7 +14,7 @@ function Home(){
         <HomeWeb>
             {modalVisible && (
                     <Modal visible={modalVisible} closable={true} maskClosable={true} onClose={closeModal} 
-                    image={단톡방} url={'https://forms.gle/sSDYkoNDpe4FDuFS8'}></Modal>
+                    image={require('../Events/할로윈 포토부스.png')} url={'https://www.instagram.com/p/Cyz5xrVLYze/?img_index=1'}></Modal>
             )}
             <HomeTitle>
                 <Fade duration={3000}>
@@ -22,16 +22,34 @@ function Home(){
                         <Name1>National University of Singapore Korea Society</Name1>
                         <Name2>싱가포르 국립대학 한인 학부 학생회 공식 웹사이트 입니다</Name2>
                     </Name>
-                    <Logo src={require('../photos/NUS logo gray.png')}></Logo>
+                    <Logo src={require('../photos/NUS logo gray.png')}/>
                 </Fade>
             </HomeTitle>
             <HomeTitle2></HomeTitle2>
+            <Updates>
+                <UpdatesWrapper>
+                    <UpdatesTitle>Youtube</UpdatesTitle>
+                    <YoutubeWrapper>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vIy6PqvGMJI" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            >
+                        </iframe>
+                    </YoutubeWrapper>
+                </UpdatesWrapper>
+                <UpdatesWrapper>
+                    <UpdatesTitle>Events</UpdatesTitle>
+                    <EventWrapper>
+                        <Carousel></Carousel>
+                    </EventWrapper>
+                </UpdatesWrapper>
+            </Updates>
             <TeamHeader>Our Team</TeamHeader>
             <TeamTitle>President</TeamTitle>
             <Members>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic2 src={require('../photos/유다현.png')}></MemberPic2>
+                        <MemberPic2 src={require('../photos/유다현.png')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>유다현</MemberName>
@@ -42,56 +60,10 @@ function Home(){
             <Members>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic src={require('../photos/하아연.png')}></MemberPic>
+                        <MemberPic src={require('../photos/하아연.png')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>하아연</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-            </Members>
-            <TeamTitle>IR</TeamTitle>
-            <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic2 src={require('../photos/이채연.png')}></MemberPic2>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>이채연</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/김의성.png')}></MemberPic>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>김의성</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-            </Members>
-            <TeamTitle>PR&M</TeamTitle>
-            <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/고선민.jpeg')}></MemberPic>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>고선민</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/노주빈.jpeg')}></MemberPic>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>노주빈</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/사공민승.jpeg')}></MemberPic>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>사공민승</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
             </Members>
@@ -99,15 +71,7 @@ function Home(){
             <Members>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic src={require('../photos/권두현.png')}></MemberPic>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>권두현</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/이서형.jpeg')}></MemberPic>
+                        <MemberPic src={require('../photos/이서형.jpeg')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>이서형</MemberName>
@@ -115,26 +79,77 @@ function Home(){
                 </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic src={require('../photos/손성연.png')}></MemberPic>
+                        <MemberPic src={require('../photos/손성연.png')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>손성연</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
-            </Members>
-            <TeamTitle>IT</TeamTitle>
-            <Members>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic src={require('../photos/신진.png')}></MemberPic>
+                        <MemberPic src={require('../photos/이채연.png')}/>
                     </ProfileHeader>
                     <ProfileFooter>
-                        <MemberName>신진</MemberName>
+                        <MemberName>이채연</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic src={require('../photos/정성윤.jpeg')}></MemberPic>
+                        <MemberPic src={require('../photos/김성준.png')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>김성준</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic ></MemberPic>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>이태윤</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+            </Members>
+            <TeamTitle>Media & Design</TeamTitle>
+            <Members>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/고선민.jpeg')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>고선민</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/노주빈.jpeg')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>노주빈</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/배유민.png')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>배유민</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/홍하람.png')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>홍하람</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+            </Members>
+            <TeamTitle>Information and Data</TeamTitle>
+            <Members>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/정성윤.jpeg')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>정성윤</MemberName>
@@ -142,10 +157,26 @@ function Home(){
                 </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic src={require('../photos/권순형.png')}></MemberPic>
+                        <MemberPic src={require('../photos/권순형.png')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>권순형</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/조현아.png')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>조현아</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/김현섭.png')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>김현섭</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
             </Members>
@@ -198,6 +229,7 @@ const Name1 = styled.h1`
         font-size: 50px;
         font-weight: 400;
         line-height: 60px;
+        margin-top: 55px;
     }
     @media only screen and (max-width : 480px) {
         font-size: 25px;
@@ -231,6 +263,73 @@ const Logo = styled.img`
     }
 `
 
+const Updates = styled.div`
+    margin-top: 30px;
+    margin-left: 140px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width : 480px) {
+        margin-left: 15px; 
+        margin-right: 0px;
+    }
+`
+
+const UpdatesWrapper = styled.div`
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #B79A50;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    @media only screen and (max-width : 480px) {
+        height: 130px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        border: 2px solid #B79A50;
+    }
+`
+
+const UpdatesTitle = styled.h2`
+    color: #050716;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    @media only screen and (max-width : 480px) {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+`
+
+const YoutubeWrapper = styled.div`
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 560px;
+    height: 315px;
+    display: flex;
+    justify-content: flex-start;
+    @media only screen and (max-width : 480px) {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 180px;
+        height: 100px;
+    }
+`
+const EventWrapper = styled.div`
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width : 480px) {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+`
+
 const TeamHeader = styled.h1`
     color: #050716;
     font-size: 45px;
@@ -238,7 +337,7 @@ const TeamHeader = styled.h1`
     margin-top: 50px;
     text-align: left;
     @media only screen and (max-width : 480px) {
-        font-size: 30px;
+        font-size: 20px;
         margin-left: 30px;
     }
 `
@@ -249,7 +348,7 @@ const TeamTitle = styled.h2`
     margin-left: 187px;
     text-align: left;
     @media only screen and (max-width : 480px) {
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 30px;
     }
 `
@@ -268,42 +367,42 @@ const Members = styled.div`
 `
 
 const MemberProfile = styled.div`
-    width: 300px;
-    height: 400px;
+    width: 225px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     border-radius: 25px;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    margin-right: 40px;
-    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-bottom: 22.5px;
     @media only screen and (max-width : 480px) {
-        width: 100px;
-        height: 133px;
-        margin-right: 20px;
-        border-radius: 10px;
+        width: 75px;
+        height: 100px;
+        margin-right: 15px;
+        border-radius: 7.5px;
     }
 `
 
 const ProfileHeader = styled.div`
-    width: 300px;
-    height: 330px;
+    width: 225px;
+    height: 247.5px;
     display: flex;
     justify-content: center;
     @media only screen and (max-width : 480px) {
-        width: 100px;
-        height: 109px;
+        width: 75px;
+        height: 82px;
     }
 `
 const ProfileFooter = styled.div`
     background: #232A62;
-    width: 300px;
-    height: 70px;
+    width: 225px;
+    height: 52.5px;
     border-radius: 0px 0px 25px 25px;
     display: flex;
     justify-content: flex-start;
     @media only screen and (max-width : 480px) {
-        width: 100px;
-        height: 23px;
+        width: 75px;
+        height: 17.5px;
         border-radius: 0px 0px 10px 10px;
     }
 `
@@ -322,8 +421,8 @@ const MemberPic2 = styled.img`
 
 const MemberName = styled.h3`
     color: white;
-    font-size: 22px;
-    margin-left: 25px;
+    font-size:18px;
+    margin-left: 20px;
     align-self: center;
     @media only screen and (max-width : 480px) {
         font-size: 10px;
