@@ -14,7 +14,7 @@ function Home(){
         <HomeWeb>
             {modalVisible && (
                     <Modal visible={modalVisible} closable={true} maskClosable={true} onClose={closeModal} 
-                    image={require('../Events/할로윈 포토부스.png')} url={'https://www.instagram.com/p/Cyz5xrVLYze/?img_index=1'}></Modal>
+                    image={require('../photos/blog.png')} url={'https://blog.naver.com/nusks'}></Modal>
             )}
             <HomeTitle>
                 <Fade duration={3000}>
@@ -49,34 +49,16 @@ function Home(){
             <Members>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic2 src={require('../photos/유다현.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>유다현</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-            </Members>
-            <TeamTitle>Vice President</TeamTitle>
-            <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/하아연.png')}/>
+                        <MemberPic2 src={require('../photos/하아연.png')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>하아연</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
             </Members>
+           
             <TeamTitle>Student Life</TeamTitle>
             <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/이서형.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>이서형</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
                         <MemberPic src={require('../photos/손성연.png')}/>
@@ -107,6 +89,14 @@ function Home(){
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>이태윤</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/조현아.png')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>조현아</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
             </Members>
@@ -142,41 +132,6 @@ function Home(){
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>홍하람</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-            </Members>
-            <TeamTitle>Information and Data</TeamTitle>
-            <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/정성윤.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>정성윤</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/권순형.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>권순형</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/조현아.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>조현아</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/김현섭.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>김현섭</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
             </Members>
