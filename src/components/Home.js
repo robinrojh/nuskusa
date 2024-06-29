@@ -49,7 +49,7 @@ function Home(){
             <Members>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic2 src={require('../photos/하아연.png')}/>
+                        <MemberPic2 src={require('../photos/하아연-2.png')} />
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>하아연</MemberName>
@@ -85,7 +85,7 @@ function Home(){
                 </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic ></MemberPic>
+                        <MemberPic src={require('../photos/이태윤.jpg')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>이태윤</MemberName>
@@ -102,22 +102,6 @@ function Home(){
             </Members>
             <TeamTitle>Media & Design</TeamTitle>
             <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/고선민.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>고선민</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/노주빈.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>노주빈</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
                         <MemberPic src={require('../photos/배유민.png')}/>

@@ -104,6 +104,13 @@ function Freshmen(){
     return(
         <FreshmenWeb>
             <FreshmenTitle>AY24/25 신입생 여러분 환영합니다!</FreshmenTitle>
+            <FreshmenDesc>AY24/25 신입생 단톡방 가입하기!!</FreshmenDesc>
+            <FreshmenLink> 
+                <a href='https://forms.gle/K2ypGctxbzRqMyt78' 
+                rel="noopener noreferrer" target={'_blank'} cursor="pointer">
+                    <p>단톡방 가입 구글폼</p>
+                </a>
+            </FreshmenLink>
             <FreshmenDesc>신입생 가이드북와 함께하는 슬기로운 새내기 생활!!</FreshmenDesc>
             <FreshmenLink> 
                 <a href='https://nusks.notion.site/e16b18a63fee436aaaf55711155fe96a?v=8e31f7a756fa43d6b10fd6a1881961fb' 
