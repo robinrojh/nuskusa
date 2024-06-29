@@ -103,7 +103,7 @@ function Freshmen(){
 
     return(
         <FreshmenWeb>
-            <FreshmenTitle>AY23/24 신입생 여러분 환영합니다!</FreshmenTitle>
+            <FreshmenTitle>AY24/25 신입생 여러분 환영합니다!</FreshmenTitle>
             <FreshmenDesc>신입생 가이드북와 함께하는 슬기로운 새내기 생활!!</FreshmenDesc>
             <FreshmenLink> 
                 <a href='https://nusks.notion.site/e16b18a63fee436aaaf55711155fe96a?v=8e31f7a756fa43d6b10fd6a1881961fb' 

@@ -14,7 +14,7 @@ function Home(){
         <HomeWeb>
             {modalVisible && (
                     <Modal visible={modalVisible} closable={true} maskClosable={true} onClose={closeModal} 
-                    image={require('../photos/blog.png')} url={'https://blog.naver.com/nusks'}></Modal>
+                    image={require('../Events/2425 신입생.png')} url={'https://forms.gle/K2ypGctxbzRqMyt78'}></Modal>
             )}
             <HomeTitle>
                 <Fade duration={3000}>
@@ -30,7 +30,7 @@ function Home(){
                 <UpdatesWrapper>
                     <UpdatesTitle>Youtube</UpdatesTitle>
                     <YoutubeWrapper>
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vIy6PqvGMJI" title="YouTube video player" 
+                        <iframe width="100%" height="100%" src="https://youtu.be/0f8PL-p57E8?si=3mIqU0cb1KwDUswZ" title="YouTube video player" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen
                             >
