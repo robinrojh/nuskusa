@@ -30,7 +30,7 @@ function Home(){
                 <UpdatesWrapper>
                     <UpdatesTitle>Youtube</UpdatesTitle>
                     <YoutubeWrapper>
-                        <iframe width="100%" height="100%" src="https://youtu.be/0f8PL-p57E8?si=3mIqU0cb1KwDUswZ" title="YouTube video player" 
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0f8PL-p57E8?si=oG1DG2cS2uQpWkSJ" title="YouTube video player" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen
                             >
