@@ -50,10 +50,21 @@ const NotionWrapper = styled.div`
 `
 
 function Freshmen(){
+    const [utransferResponse, setUtransferResponse] = useState({});
+
+    useEffect(() => {
+        const NOTION_PAGE_ID = '9162aefe317d441fada73d36235022c0';
+        fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
+      .then(res => res.json())
+      .then((resJson) => {
+        setUtransferResponse(resJson);
+      });
+    }, [])
+
     const [arrivalResponse, setArrivalResponse] = useState({});
 
     useEffect(() => {
-        const NOTION_PAGE_ID = 'de2edbbb41bc4974b41b285359cef8cb';
+        const NOTION_PAGE_ID = 'd60562eb3b704e29b578e1be38c811af';
         fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
       .then(res => res.json())
       .then((resJson) => {
@@ -63,7 +74,7 @@ function Freshmen(){
 
     const [dormResponse, setDormResponse] = useState({});
     useEffect(() => {
-        const NOTION_PAGE_ID = '5712118571014caeba43ffd7c89eba64';
+        const NOTION_PAGE_ID = 'f184a475ccf74f67a4a3e9bc9085a9b0';
         fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
       .then(res => res.json())
       .then((resJson) => {
@@ -73,7 +84,7 @@ function Freshmen(){
 
     const [lifeResponse, setLifeResponse] = useState({});
     useEffect(() => {
-        const NOTION_PAGE_ID = '6c690bc073dd46e1a175f349710cc7b8';
+        const NOTION_PAGE_ID = '7e6d96fdc5d04320a95b3e8077dd0759';
         fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
       .then(res => res.json())
       .then((resJson) => {
@@ -83,7 +94,7 @@ function Freshmen(){
 
     const [schoolResponse, setSchoolResponse] = useState({});
     useEffect(() => {
-        const NOTION_PAGE_ID = '01b1b662fc574cdcacf3cd9b35a8b19f';
+        const NOTION_PAGE_ID = 'b3d1dca47e2c4844b016e3b6e4fcda20';
         fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
       .then(res => res.json())
       .then((resJson) => {
@@ -93,7 +104,7 @@ function Freshmen(){
 
     const [sgResponse, setSgResponse] = useState({});
     useEffect(() => {
-        const NOTION_PAGE_ID = '43152d21b8ff42278c9100af5c474c6c';
+        const NOTION_PAGE_ID = '3bdd26a479434f2486d874ffdb086f14';
         fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
         .then(res => res.json())
         .then((resJson) => {
@@ -113,12 +124,13 @@ function Freshmen(){
             </FreshmenLink>
             <FreshmenDesc>신입생 가이드북와 함께하는 슬기로운 새내기 생활!!</FreshmenDesc>
             <FreshmenLink> 
-                <a href='https://nusks.notion.site/e16b18a63fee436aaaf55711155fe96a?v=8e31f7a756fa43d6b10fd6a1881961fb' 
+                <a href='https://peat-cymbal-9ed.notion.site/3cecfab5d83440d8930d2b42eee75072?v=2e71df7f9c54439691a4c6b75c1d9ef2' 
                 rel="noopener noreferrer" target={'_blank'} cursor="pointer">
                     <p>가이드북 링크 바로가기</p>
                 </a>
             </FreshmenLink>
             <NotionWrapper>
+                <NotionRenderer blockMap={utransferResponse} fullPage={true} />
                 <NotionRenderer blockMap={arrivalResponse} fullPage={true} />
                 <NotionRenderer blockMap={dormResponse} fullPage={true} />
                 <NotionRenderer blockMap={lifeResponse} fullPage={true} />
