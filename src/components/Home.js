@@ -14,7 +14,7 @@ function Home(){
         <HomeWeb>
             {modalVisible && (
                     <Modal visible={modalVisible} closable={true} maskClosable={true} onClose={closeModal} 
-                    image={require('../Events/할로윈 포토부스.png')} url={'https://www.instagram.com/p/Cyz5xrVLYze/?img_index=1'}></Modal>
+                    image={require('../Events/2425 신입생.png')} url={'https://forms.gle/K2ypGctxbzRqMyt78'}></Modal>
             )}
             <HomeTitle>
                 <Fade duration={3000}>
@@ -30,7 +30,7 @@ function Home(){
                 <UpdatesWrapper>
                     <UpdatesTitle>Youtube</UpdatesTitle>
                     <YoutubeWrapper>
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vIy6PqvGMJI" title="YouTube video player" 
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0f8PL-p57E8?si=oG1DG2cS2uQpWkSJ" title="YouTube video player" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen
                             >
@@ -49,34 +49,16 @@ function Home(){
             <Members>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic2 src={require('../photos/유다현.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>유다현</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-            </Members>
-            <TeamTitle>Vice President</TeamTitle>
-            <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/하아연.png')}/>
+                        <MemberPic2 src={require('../photos/하아연-2.png')} />
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>하아연</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
             </Members>
+           
             <TeamTitle>Student Life</TeamTitle>
             <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/이서형.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>이서형</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
                         <MemberPic src={require('../photos/손성연.png')}/>
@@ -103,31 +85,23 @@ function Home(){
                 </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
-                        <MemberPic ></MemberPic>
+                        <MemberPic src={require('../photos/이태윤.jpg')}/>
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>이태윤</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
+                <MemberProfile>
+                    <ProfileHeader>
+                        <MemberPic src={require('../photos/조현아.png')}/>
+                    </ProfileHeader>
+                    <ProfileFooter>
+                        <MemberName>조현아</MemberName>
+                    </ProfileFooter>
+                </MemberProfile>
             </Members>
             <TeamTitle>Media & Design</TeamTitle>
             <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/고선민.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>고선민</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/노주빈.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>노주빈</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
                 <MemberProfile>
                     <ProfileHeader>
                         <MemberPic src={require('../photos/배유민.png')}/>
@@ -142,41 +116,6 @@ function Home(){
                     </ProfileHeader>
                     <ProfileFooter>
                         <MemberName>홍하람</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-            </Members>
-            <TeamTitle>Information and Data</TeamTitle>
-            <Members>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/정성윤.jpeg')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>정성윤</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/권순형.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>권순형</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/조현아.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>조현아</MemberName>
-                    </ProfileFooter>
-                </MemberProfile>
-                <MemberProfile>
-                    <ProfileHeader>
-                        <MemberPic src={require('../photos/김현섭.png')}/>
-                    </ProfileHeader>
-                    <ProfileFooter>
-                        <MemberName>김현섭</MemberName>
                     </ProfileFooter>
                 </MemberProfile>
             </Members>

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { GrFacebook } from "react-icons/gr";
+import { GrFacebookOption } from "react-icons/gr";
 import {GrInstagram} from "react-icons/gr";
-import {GrYoutube} from "react-icons/gr"
+import {GrYoutube} from "react-icons/gr";
+import { SiNaver } from "react-icons/si";
 
 
 const FooterWeb = styled.div`
@@ -74,7 +75,9 @@ function Footer(){
             <FooterEmail>nuskusa@gmail.com</FooterEmail>
             <SocialContainer>
                 <SocialFrame>
-                    <GrFacebook name="GrFacebook" color="#B79A50" size="35px"></GrFacebook>
+                    <Link to="https://www.facebook.com/groups/258391824278076/?ref=share&mibextid=S66gvF&_rdr">
+                        <GrFacebookOption name="GrFacebookOption" color="#B79A50" size="35px"></GrFacebookOption>
+                    </Link>
                 </SocialFrame>
                 <SocialFrame>
                     <Link to="https://www.instagram.com/nus__ks/">
@@ -84,6 +87,11 @@ function Footer(){
                 <SocialFrame>
                     <Link to="https://www.youtube.com/@nus__ks">
                         <GrYoutube name="GrYoutube" color="#B79A50" size="37px"></GrYoutube>
+                    </Link>
+                </SocialFrame>
+                <SocialFrame>
+                    <Link to="https://blog.naver.com/nusks">
+                        <SiNaver name="SiNaver" color="#B79A50" size="37px"></SiNaver>
                     </Link>
                 </SocialFrame>
             </SocialContainer>

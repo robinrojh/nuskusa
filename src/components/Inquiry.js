@@ -33,8 +33,8 @@ function Inquiry(){
     return(
         <InquiryWeb>
             <InquiryTitle>Inquiry Form</InquiryTitle>
-            <InquiryDesc>If you have any inquiry, feel free to fill out this form. Thank you.</InquiryDesc>
-            <InquiryDesc>문의 사항이 있으신 분들은 아래 구글 폼을 작성하여 주시기를 바랍니다</InquiryDesc>
+            <InquiryDesc>If you have any inquiry, feel free to fill out this form or contact us through email. Thank you.</InquiryDesc>
+            <InquiryDesc>문의 사항이 있으신 분들은 아래 구글 폼을 작성하거나 이메일로 연락주시기 바랍니다</InquiryDesc>
             <iframe src="https://forms.gle/TXrPGzD1PbmXyiM26" width="90%" height="1200px"></iframe>
         </InquiryWeb>
     );
