@@ -14,7 +14,7 @@ function Home(){
         <HomeWeb>
             {modalVisible && (
                     <Modal visible={modalVisible} closable={true} maskClosable={true} onClose={closeModal} 
-                    image={require('../Events/2425 신입생.png')} url={'https://forms.gle/K2ypGctxbzRqMyt78'}></Modal>
+                    image={require('../Events/2425 신입임원.png')} url={'https://docs.google.com/forms/d/e/1FAIpQLSfPOz4lOkdJmJ3HtlCM5jqdx7FvcAkJEBCAdDt9m8QwMfguZQ/viewform?usp=sf_link'}></Modal>
             )}
             <HomeTitle>
                 <Fade duration={3000}>

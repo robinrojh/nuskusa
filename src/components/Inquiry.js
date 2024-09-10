@@ -29,15 +29,15 @@ const InquiryDesc = styled.p`
     }
 `
 
-function Inquiry(){
+ function Inquiry(){
     return(
         <InquiryWeb>
-            <InquiryTitle>Inquiry Form</InquiryTitle>
-            <InquiryDesc>If you have any inquiry, feel free to fill out this form or contact us through email. Thank you.</InquiryDesc>
-            <InquiryDesc>문의 사항이 있으신 분들은 아래 구글 폼을 작성하거나 이메일로 연락주시기 바랍니다</InquiryDesc>
-            <iframe src="https://forms.gle/TXrPGzD1PbmXyiM26" width="90%" height="1200px"></iframe>
+            <InquiryTitle>Inquiry</InquiryTitle>
+            <InquiryDesc>If you have any inquiry, feel free to contact us through email. For interviews and other matters, please contact NUS directly. Thank you.</InquiryDesc>
+            <InquiryDesc>문의 사항이 있으신 분들은 이메일로 연락주시기 바랍니다. 인터뷰 등의 사항은 학교 측에 문의 부탁드립니다.</InquiryDesc>
         </InquiryWeb>
     );
-}
+} 
+// <iframe src="https://forms.gle/TXrPGzD1PbmXyiM26" width="90%" height="1200px"></iframe>
 
 export default Inquiry;
