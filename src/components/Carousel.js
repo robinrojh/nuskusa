@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import Slide from './Slide';
 import Slider from "react-slick";
-import img1 from '../Events/2425 신입생.png'; 
-import img2 from '../photos/blog.jpg'; 
+import img1 from "../Events/2425 신입임원.png";
+import img2 from '../Events/2425 신입생.png'; 
+import img3 from '../photos/blog.jpg'; 
 
 //이벤트 슬라이드 Function
 
@@ -27,6 +28,7 @@ function Carousel() {
       <StyledSlide {...settings}>
         <Slide img={img1}/>
         <Slide img={img2}/>
+        <Slide img={img3}/>
       </StyledSlide>
     </Container>
   );
